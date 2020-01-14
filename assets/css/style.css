@@ -1,0 +1,17 @@
+body {
+}
+
+.weather-header {
+	background-color: darkgray;
+	height: 100px;
+}
+
+.header-div {
+	text-align: center;
+}
+#header-title {
+	color: white;
+	font-size: 50px;
+	font-weight: bold;
+	padding-top: 20px;
+}
