@@ -7,8 +7,8 @@ body {
 	margin: 0px;
 	padding: 0px;
 	height: 100%;
-	/* display: flex;
-	flex-direction: column; */
+	display: flex;
+	flex-direction: column;
 }
 
 /* header styling */
@@ -40,7 +40,11 @@ body {
 	background-color: lightblue;
 	height: 300px;
 	display: grid;
-	grid-template-rows: 1fr 1fr 1fr;
+	grid-template-columns: 1fr;
+}
+.search-input {
+	display: grid;
+	grid-template-columns: 4fr 1fr;
 }
 
 #searchtext {
