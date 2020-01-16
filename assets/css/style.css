@@ -29,11 +29,17 @@ body {
 
 /* main content container styling */
 
+label {
+	font-size: 24px;
+	font-weight: bold;
+}
+
 .container {
 	flex: 1 0 auto;
 	display: grid;
 	padding-top: 20px;
 	grid-template-columns: 2fr 4fr;
+	grid-gap: 20px;
 }
 
 .search-row {
@@ -58,6 +64,13 @@ body {
 .data-row {
 	background-color: lightyellow;
 	height: 300px;
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+.citydata {
+	height: 30px;
+	background-color: gray;
 }
 /* footer styling */
 
