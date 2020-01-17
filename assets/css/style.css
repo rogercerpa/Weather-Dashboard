@@ -15,15 +15,15 @@ body {
 
 .weather-header {
 	display: grid;
-	background-color: #272a33;
 	height: 150px;
 	text-align: center;
 }
 
 #header-title {
-	color: white;
+	color: #272a33;
 	font-size: 50px;
 	font-weight: bold;
+	padding: 20px;
 }
 
 /* main content container styling */
@@ -41,12 +41,13 @@ label {
 }
 
 .search-row {
-	background-color: #c2c0ab;
+	background-color: #82d4ff;
 	height: 300px;
 	display: grid;
 	grid-template-columns: 1fr;
 	border-radius: 10px;
 	padding: 10px;
+	color: #272a33;
 }
 .search-input {
 	display: grid;
@@ -62,7 +63,7 @@ label {
 }
 
 .data-row {
-	background-color: #c2c0ab;
+	background-color: #82d4ff;
 	height: 300px;
 	display: grid;
 	grid-template-columns: 1fr;
@@ -73,4 +74,24 @@ label {
 .citydata {
 	height: 30px;
 	background-color: gray;
+}
+
+.status-row {
+	height: 300px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-gap: 10px;
+	grid-column-start: 2;
+}
+
+.forecast {
+	background-color: #3365eb;
+	width: 150px;
+	height: 150px;
+	display: grid;
+	grid-template-row: 1fr 1fr 1fr 1fr 1fr;
+	text-align: center;
+	border-radius: 10px;
+
+	/* grid-template-columns: 1fr; */
 }
