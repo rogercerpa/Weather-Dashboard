@@ -46,7 +46,7 @@ label {
 }
 
 .search-row {
-	background-color: #82d4ff;
+	background-color: #8ed3f8;
 	height: 300px;
 	display: grid;
 	grid-template-rows: repeat(8, 1fr);
@@ -71,7 +71,7 @@ label {
 }
 
 .data-row {
-	background-color: #82d4ff;
+	background-color: #8ed3f8;
 	height: 300px;
 	display: grid;
 	grid-template-rows: repeat(10, 1fr);
@@ -83,7 +83,7 @@ label {
 
 .citydata {
 	height: 30px;
-	background-color: gray;
+	/* background-color: gray; */
 }
 
 .status-row {
@@ -102,7 +102,7 @@ label {
 }
 
 .forecast {
-	background-color: #3365eb;
+	background-color: #3062ee;
 	width: 150px;
 	height: 150px;
 	display: grid;
