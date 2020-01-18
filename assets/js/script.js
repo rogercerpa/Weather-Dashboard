@@ -1,4 +1,4 @@
-// var cityname = $('#searchtext').val();
+// var cityname = $('#searchtext').val().trim();
 // console.log(cityname);
 
 // Here we are building the URL we need to query the database
@@ -26,14 +26,27 @@ $.ajax({
 	$('.feels').text('Feels Like: ' + weather.main.feels_like);
 });
 
-// $.ajax({
-// 	url    : queryURL,
-// 	method : 'GET'
-// }).then(function(forecast) {
-// 	console.log(queryURL);
-// 	console.log(forecast);
+$.ajax({
+	url    : queryURL,
+	method : 'GET'
+}).then(function(forecast) {
+	console.log(queryURL);
+	console.log(forecast);
 
-// 	// Transfer content to HTML
-// 	$('.temperature1').text('Temperature (F) ' + weather.list.main.temp);
-// 	$('.humidity1').text('Humidity: ' + weather.list.main.humidity);
-// });
+	// Transfer content to HTML
+	//day 1
+	$('.temperature1').text('Temperature (F) ' + forecast.list[0].main.temp);
+	$('.humidity1').text('Humidity: ' + forecast.list[0].main.humidity);
+	//day2
+	// $('.temperature1').text('Temperature (F) ' + forecast.list[1].main.temp);
+	// $('.humidity1').text('Humidity: ' + forecast.list[1].main.humidity);
+	// //day3
+	// $('.temperature1').text('Temperature (F) ' + forecast.list[0].main.temp);
+	// $('.humidity1').text('Humidity: ' + forecast.list[0].main.humidity);
+	// //day4
+	// $('.temperature1').text('Temperature (F) ' + forecast.list[0].main.temp);
+	// $('.humidity1').text('Humidity: ' + forecast.list[0].main.humidity);
+	// //day5
+	// $('.temperature1').text('Temperature (F) ' + forecast.list[0].main.temp);
+	// $('.humidity1').text('Humidity: ' + forecast.list[0].main.humidity);
+});
