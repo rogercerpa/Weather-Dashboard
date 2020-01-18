@@ -35,18 +35,23 @@ $.ajax({
 
 	// Transfer content to HTML
 	//day 1
+	$('.image1').text(forecast.list[3].weather[0].icon);
 	$('.temperature1').text('Temperature (F) ' + forecast.list[3].main.temp);
-	$('.humidity1').text('Humidity: ' + forecast.list[3].main.humidity);
+	$('.humidity1').text('Humidity: ' + forecast.list[3].main.humidity + '%');
 	// day2
+	$('.image2').text(forecast.list[11].weather[0].icon);
 	$('.temperature2').text('Temperature (F) ' + forecast.list[11].main.temp);
-	$('.humidity2').text('Humidity: ' + forecast.list[11].main.humidity);
+	$('.humidity2').text('Humidity: ' + forecast.list[11].main.humidity + '%');
 	//day3
+	$('.image3').text(forecast.list[19].weather[0].icon);
 	$('.temperature3').text('Temperature (F) ' + forecast.list[19].main.temp);
-	$('.humidity3').text('Humidity: ' + forecast.list[19].main.humidity);
+	$('.humidity3').text('Humidity: ' + forecast.list[19].main.humidity + '%');
 	//day4
+	$('.image4').text(forecast.list[27].weather[0].icon);
 	$('.temperature4').text('Temperature (F) ' + forecast.list[27].main.temp);
-	$('.humidity4').text('Humidity: ' + forecast.list[27].main.humidity);
+	$('.humidity4').text('Humidity: ' + forecast.list[27].main.humidity + '%');
 	//day5
+	$('.image5').text(forecast.list[35].weather[0].icon);
 	$('.temperature5').text('Temperature (F) ' + forecast.list[35].main.temp);
-	$('.humidity5').text('Humidity: ' + forecast.list[35].main.humidity);
+	$('.humidity5').text('Humidity: ' + forecast.list[35].main.humidity + '%');
 });
