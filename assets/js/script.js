@@ -27,9 +27,13 @@ $('#search-btn').on('click', function(event) {
 		console.log(weather);
 		console.log(queryURL2);
 		var temp = JSON.stringify(weather.main.temp);
+		var iconsrc = weather.weather[0].icon;
+		var iconurl = 'http://openweathermap.org/img/w/' + iconsrc + '.png';
 
 		// Transfer content to HTML
 		$('.city').html(weather.name + ' Weather Details');
+		$('.icon1').attr('src', iconurl);
+		// $('.city').append('img');
 		$('.wind').text('Wind Speed: ' + weather.wind.speed);
 		$('.humidity').text('Humidity: ' + weather.main.humidity);
 		$('.temperature').text(
