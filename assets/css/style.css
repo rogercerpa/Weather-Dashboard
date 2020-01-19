@@ -42,7 +42,6 @@ label {
 	grid-template-rows: min-content;
 	grid-gap: 20px;
 	justify-content: start;
-	/* align-content: center; */
 }
 
 .search-row {
@@ -56,8 +55,13 @@ label {
 	grid-gap: 5px;
 }
 .search-input {
-	display: grid;
-	grid-template-columns: 4fr 1fr;
+	/* display: grid;
+	grid-template-columns: 4fr 1fr; */
+}
+
+#search-btn {
+	height: 30px;
+	width: auto;
 }
 
 #searchtext {
@@ -77,13 +81,17 @@ label {
 	grid-template-rows: repeat(10, 1fr);
 	border-radius: 10px;
 	padding: 10px;
-	grid-gap: 5px;
+	grid-gap: 10px;
 	color: #272a33;
 }
 
 .citydata {
 	height: 30px;
-	/* background-color: gray; */
+	padding: 10px;
+}
+.city {
+	font-size: 24px;
+	font-weight: bold;
 }
 
 .status-row {
